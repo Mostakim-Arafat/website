@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 style="text-align: center"> song switer</h1>
+       Created by Araf <a href="#" id="top_r" style="cursor: default;">@</a>T.
+    <div id="top" style="display: none;">
+        <p>surprise</p>
+    <label for="username">USERNAME</label> 
+    <input id="username" type="text"><br><br>
+    <label for="pass">password</label>
+    <input id="pass" type="text"><br><br>   
+    <button id="top_b">SUBMIT</button>    
+    </div>
+
+<div id="main">
+<div id="songlist">
+        <h4>SONG list</h4>
+        
+            <ul type="square">
+    <li><button onclick="cent()" type="button">50_cent</button></li> <br>
+    <li><button onclick="wave()" type="button">wave</button></li>
+            </ul>
+</div>
+
+<div id="video">
+     <video id="sample" height="300" width="300" controls loop>
+        <source id="fun" src="clips/50 cent.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="setting">
+    <h3>setting</h3>
+    <ul type="circle">
+   <li> <button onclick="toggle()"><p id="hello">dark_mode</p></button> </li><br>
+
+   <label for="resu">Download:</label>
+   <select id="resu">
+    <option value="clips/50 cent.mp4">720px</option>
+    <option value="clips/50 cent_360p.mp4">360px</option>
+   </select>
+  <li> <button onclick="download()">download</button></li><br>
+  <li>
+    <label for="speed">video speed</label>
+    <input type="range" max="1" min="0.25" id="speed" step="0.25" value="1">
+</li>
+  </ul>
+</div>
+    
+</div>
+    
+    
+    
+     <script src="button.js"></script>
+
+    </body>
+</html>
