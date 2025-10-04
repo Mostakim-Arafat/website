@@ -25,9 +25,10 @@
 </div>
 
 <div id="video">
-     <video id="sample" height="300" width="300" controls loop>
+     <video id="sample" height="300" width="300" controls loop preload="auto">
         <source id="fun" src="clips/50 cent.mp4" type="video/mp4">
-    </video>
+    </video><br><br>
+    <iframe id="frame" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/MA_00925211_gwnvzd.jpg"></iframe>
 </div>
 
 <div id="setting">
@@ -43,7 +44,7 @@
   <li> <button onclick="download()">download</button></li><br>
   <li>
     <label for="speed">video speed</label>
-    <input type="range" max="1" min="0.25" id="speed" step="0.25" value="1">
+    <input type="range" max="1.5" min="0.5" id="speed" step="0.5" value="1">
 </li>
   </ul>
 </div>
